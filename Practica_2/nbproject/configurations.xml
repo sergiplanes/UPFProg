@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configurationDescriptor version="97">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="dades" displayName="dades" projectFiles="true">
+      <itemPath>dades/asgs-get.txt</itemPath>
+      <itemPath>dades/expedient_12345.txt</itemPath>
+    </logicalFolder>
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
@@ -21,6 +25,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>dades</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="1">
@@ -31,6 +38,10 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="dades/asgs-get.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dades/expedient_12345.txt" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="practica_2.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="practica_2.h" ex="false" tool="3" flavor2="0">
@@ -56,6 +67,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="dades/asgs-get.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="dades/expedient_12345.txt" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="practica_2.cc" ex="false" tool="1" flavor2="0">
       </item>
       <item path="practica_2.h" ex="false" tool="3" flavor2="0">

@@ -32,8 +32,8 @@
 
 int carregar_fitxers(FILE * expedients,FILE * asignatures){
     
-        expedients=fopen("expedient_12345.txt","r");   //Obrim el fitxer "estudiants.txt" dins el punter de tipos fitxer f.
-        asignatures=fopen("asgs-get.txt","r");   //Obrim el fitxer "estudiants.txt" dins el punter de tipos fitxer f.
+        expedients=fopen("dades\expedient_12345.txt","r");   //Obrim el fitxer "estudiants.txt" dins el punter de tipos fitxer f.
+        asignatures=fopen("dades\asgs-get.txt","r");   //Obrim el fitxer "estudiants.txt" dins el punter de tipos fitxer f.
     
         if(expedients && asignatures==NULL){                    //Aquesa clausula if, es per comprovar si el fitxer "estudiants.txt"
             printf("ERROR \n");         //te algun coningut o si el programa el carrega correctament.
@@ -44,6 +44,7 @@ int carregar_fitxers(FILE * expedients,FILE * asignatures){
 }
 
 void alta_expedient(){
+    
     
 }
 void entrar_matricula(){
