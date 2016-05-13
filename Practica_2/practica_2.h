@@ -35,6 +35,8 @@
 #ifndef _practica_2_h
 #define	_practica_2_h
 
+#include "llibreria_io.c"
+#include  "llibreria_ordenacio.c"
 
 
 #endif	/* _practica_2_h */
