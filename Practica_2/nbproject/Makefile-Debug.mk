@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/practica_2.o
+	${OBJECTDIR}/dades/llibreria_io.o \
+	${OBJECTDIR}/dades/llibreria_ordenacio.o \
+	${OBJECTDIR}/dades/practica_2.o
 
 
 # C Compiler Flags
@@ -60,12 +62,22 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/practica_2: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/practica_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/practica_2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/practica_2.o: practica_2.cc 
-	${MKDIR} -p ${OBJECTDIR}
+${OBJECTDIR}/dades/llibreria_io.o: dades/llibreria_io.c 
+	${MKDIR} -p ${OBJECTDIR}/dades
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/practica_2.o practica_2.cc
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/dades/llibreria_io.o dades/llibreria_io.c
+
+${OBJECTDIR}/dades/llibreria_ordenacio.o: dades/llibreria_ordenacio.c 
+	${MKDIR} -p ${OBJECTDIR}/dades
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/dades/llibreria_ordenacio.o dades/llibreria_ordenacio.c
+
+${OBJECTDIR}/dades/practica_2.o: dades/practica_2.c 
+	${MKDIR} -p ${OBJECTDIR}/dades
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/dades/practica_2.o dades/practica_2.c
 
 # Subprojects
 .build-subprojects:

@@ -29,13 +29,13 @@
  */
 
 //
-// File:   welcome.h
+// File:   practica_2.h
 //
 
-#ifndef _welcome_H
-#define	_welcome_H
+#ifndef _practica_2_h
+#define	_practica_2_h
 
 
 
-#endif	/* _welcome_H */
+#endif	/* _practica_2_h */
 
